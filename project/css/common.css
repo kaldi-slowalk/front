@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.clearfix::after, .clearfix::before {
+	content: '';
+	display: table
+}
+.clearfix::after {
+	clear: both
+}
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden
+}
+.float_l {
+	float: left
+}
+.float_r {
+	float: right
+}

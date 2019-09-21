@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>반응형+적응형 = 반응형</title>
+<style>
+*{padding:0; margin:0; text-align:center; transition:0.6s;}
+ul{list-style:none;}
+ul:after{clear:both; content:""; display:block;}
+body{min-width:320px;}
+header{width:calc(100% - 40px); margin:10px 0 10px 20px;}
+header>h1{ margin:30px 0;}
+header>nav{}
+header>nav>ul{width:100%;}
+header>nav>ul>li{width:25%; float:left;  background:#ccc; height:50px; line-height:50px;}
+header>nav>ul>li:nth-child(1),
+header>nav>ul>li:nth-child(3){background:#999;}
+div{width:calc(100% - 40px); height:150px; margin:10px 0 10px 20px; background:#666; line-height:150px; color:#fff;}
+i{display:block;}
+i>ul{width:calc(100% - 40px); margin-left:20px;}
+i>ul>li{width:calc(100% / 6); float:left;  height:200px; line-height:200px; background:#ccc;}
+i>ul>li:nth-child(2),
+i>ul>li:nth-child(4),
+i>ul>li:nth-child(6){background:#999;}
+footer{width:calc(100% - 40px); margin-left:20px; background:#333; color:#fff; height:150px; line-height:150px;}
+
+@media all and (max-width:900px){
+header>nav>ul>li{width:50%; height:30px; line-height:30px;}
+header>nav>ul>li:nth-child(2),
+header>nav>ul>li:nth-child(3){background:#666;}
+div{height:80px; line-height:80px;}
+i>ul>li{width:calc(100% / 3); height:80px; line-height:80px;}
+footer{height:80px; line-height:80px;}
+}
+
+
+@media all and (max-width:600px){
+header>nav>ul>li{width:100%; height:20px; line-height:20px;}
+header>nav>ul>li:nth-child(1),
+header>nav>ul>li:nth-child(3){background:#999;}
+div{height:50px; line-height:50px;}
+i>ul>li{width:calc(100% / 1); height:30px; line-height:30px;}
+footer{height:50px; line-height:50px;}
+}
+
+
+</style>
+</head><body>
+
+<header>
+  <h1>반응형과 적응형 모두 들어간 웹사이트의 예제에요.<br>
+      보통 이런사이트를 반응형이라 부르기에<bR>용어정리에 있어 혼란이 생겨요.</h1>
+  <nav>
+    <ul>
+      <li>메뉴</li>
+      <li>메뉴</li>
+      <li>메뉴</li>
+      <li>메뉴</li>
+    </ul>
+  </nav>
+</header>
+
+<div>컨텐츠들</div>
+
+<i>
+  <ul>
+    <li>내용</li>
+    <li>내용</li>
+    <li>내용</li>
+    <li>내용</li>
+    <li>내용</li>
+    <li>내용</li>
+  </ul>
+</i>
+<div>컨텐츠들</div>
+
+<footer>푸터에용</footer>
+</body>
+</html>
